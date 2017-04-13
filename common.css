@@ -19,7 +19,7 @@ textarea { vertical-align: top; }
 input, button, textarea, select { }
 legend { color: #000; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-body { color: #333; font-family: Arial, "微软雅黑", "Tahoma", sans-serif; font-size: 12px; }
+body { color: #333; background: #f5f5f5; font-family: Arial, "微软雅黑", "Tahoma", sans-serif; font-size: 12px; }
  @media not all {
 body { font-family: arial, "微软雅黑", sans-serif;}
 }
@@ -48,14 +48,14 @@ a img { display: inline-block; }
 .yahei { font-family: 微软雅黑, "Microsoft YaHei", Verdana, Arial, sans-serif; }
 .clear { clear: both; display: block; font-size: 0; line-height: 0; }
 .clearfix:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
-.clearfix { display: inline-block; }
+.clearfix { display: block; }
 .fl { float: left }
 .fr { float: right; }
 
 .width{ width:1190px; margin:0 auto; overflow:hidden;}
 
-.header{ height:40px; line-height:40px; background:#3dafe3; overflow:hidden;}
-.header p{ color:#FFF;}
+.header{ height:30px; line-height:30px; background:#757575; overflow:hidden;}
+.header p{ color:#e2e2e2; font-size: 16px;}
 .header p span{ float:right; display:inline;}
 .header p a{ margin-left:20px; color:#FFF;}
 
@@ -69,28 +69,29 @@ a img { display: inline-block; }
 
 
 
-.bgfff { background: #FFF none repeat scroll 0% 0%; }
+.bgfff { background: #FFF url(banner.jpg) no-repeat center; padding: 19px 0; border-bottom: 1px solid #bbbec4; }
 .wraper { width: 1190px; margin: 0 auto; }
 .search-2015 { height: 90px;}
 .logo{ width:377px; margin-top:20px; overflow:hidden;}
-.logo img { width: 377px; height:48px;}
+.logo img { width: 277px; height:63px;}
 .tel { padding-left: 53px; width: 161px; height: 46px; margin-top: 13px; background: url(soso-tel.png) no-repeat 0 0; }
 .tel p { font-size: 14px; line-height: 16px; color: #999; }
 .tel big { font-size: 22px; line-height: 36px; }
 .colred { color: #fc5407 !important; }
-.soso { width: 540px; height: 38px; border: 2px solid #3dafe3; margin-top:25px; font-size: 12px; line-height: 38px; }
-
+.soso { width: 348px; height: 38px; background: rgba(151,150,150,0.47); margin-top:25px; font-size: 12px; line-height: 38px; border-radius: 38px; padding: 0 15px 0 10px; box-sizing: border-box; }
+.soso a,.soso span { float: left; font-size: 14px; color: #fff; }
+.soso span { font-size: 16px; }
 .l-canvas { position: fixed; width: 100%; height: 100%; left: 0; top: 0; z-index: 999; }
-.l-select { position: relative; width: 97px; height: 38px; z-index: 1000; cursor: pointer; line-height: 38px; background: #f8f8f8; font-size: 14px; }
-.l-selectdt { position: absolute; top: 0; left: 0; height: 38px; width: 84px; padding-left: 12px; border-right: 1px solid #ccc; }
-.l-select i { position: absolute; top: 15px; right: 12px; width: 12px; height: 7px; background: url(spirit.png) no-repeat -180px -210px; z-index: 10004; }
+.l-select { position: relative; width: 60px; height: 38px; z-index: 1000; cursor: pointer; line-height: 38px; font-size: 14px; color: #fff; }
+.l-selectdt { position: absolute; top: 0; left: 0; height: 38px; width: 63px; padding-left: 12px; }
+.l-select i { position: absolute; top: 15px; right: 18px; width: 12px; height: 7px; background: url(down.png) no-repeat center; z-index: 10004; }
 .l-selectdd { position: absolute; top: 38px; left: -2px; width: 95px; border: 2px solid #3dafe3; border-top: 0; background: #fff; z-index: 10003; background: #f8f8f8; }
 .l-selectdd p { float: left; top: 38px; width: 83px; height: 31px; font-size: 14px; padding-left: 12px; line-height: 31px; color: #333; cursor: pointer; }
 .l-selectdd p.on { background: #3dafe3; color: #fff; }
 .l-select.cur i { background-position: -180px -225px; }
-input.l-txt { width:333px; height: 26px; padding: 6px; font-size: 12px; line-height: 26px; border: 0; }
+input.l-txt { width:136px; height: 26px; padding: 6px; font-size: 12px; line-height: 26px; border: 0; background: transparent; }
 input.l-txt:focus { box-shadow: none; }
-input.l-bth-s { width: 98px; height: 38px; background: #3dafe3; color: #fff; line-height: 34px; outline: none; font-size: 16px; line-height: 34px; border: 0; }
+input.l-bth-s { width: 20px; height: 38px; background: transparent url(search.png) no-repeat center; text-indent: -9999px; line-height: 34px; outline: none; line-height: 34px; border: 0; margin-left: 6px; }
 
 
 /* main_image */
@@ -114,14 +115,10 @@ div.flicking_con a.on{background-position:0 -21px}
 
 /*bottom*/
 
-.bottom{ height:185px; background:#193e50; overflow:hidden;}
-.bot_l{ width:890px; overflow:hidden;}
-.bot_l p{ font-size:12px; color:#bfbdbe; line-height:34px; margin-top:30px;}
-.bot_l p a{ color:#bfbdbe; margin-left:6px; margin-right:6px;}
-.bot_l p span{ margin-left:6px;}
-.bot_r{ width:153px; overflow:hidden;}
-.bot_r img{ width:153px; height:153px; margin-top:18px; overflow:hidden;}
+.bottom{ overflow:hidden; padding: 18px 0 36px;}
 
 /*footer*/
-.footer{ height:55px; line-height:55px; background:#0d232e; color:#8b8d8c; text-align:center; overflow:hidden;}
-
+.footer{ background:#e8e8e8; color:#8a8a8a; text-align:center; overflow:hidden; padding: 30px 0;}
+.footer p { font-size: 16px; line-height: 24px; }
+.footer .link { color: #8b8b8b; font-size: 17px; margin-bottom: 10px; }
+.footer .link a { color: #8b8b8b; font-size: 17px; }
